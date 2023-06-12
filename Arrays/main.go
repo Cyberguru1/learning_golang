@@ -71,4 +71,9 @@ func main() {
 
 	fmt.Printf("\nKey Elements: %#v\n", key_arr)
 
+	new_unsed := [3]int{}
+
+	new_unsed[0] = 18
+
+	fmt.Println("\n",new_unsed,"\n")
 }
