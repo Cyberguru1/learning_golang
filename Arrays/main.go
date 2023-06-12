@@ -36,7 +36,7 @@ func main() {
 
 	// changing the values of an array
 
-	new_arr := 
+	new_arr := [...]int{}
 
 
 
