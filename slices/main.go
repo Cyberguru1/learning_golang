@@ -1,3 +1,10 @@
+///////////////////////////////////////
+//        !!Hamza Saidu  !!          //
+//        !!Cyb3rguru    !!          //
+//        !!Slices in Go !!          //
+//////////////////////////////////////
+
+
 package main
 
 import (
@@ -112,5 +119,15 @@ func main() {
 	res := copy(dst_slice, new_slice)
 
 	fmt.Printf("dst_slice is now : %#v and result of operation is %#v\n", dst_slice, res)
+
+	// challenge
+
+	years := []int{2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010}
+	_ = years
+
+	newYears := append([]int{}, years[0:3]...)
+	newYears  = append(newYears, years[8:11]...)
+
+	fmt.Printf("\nNew array of newYears is %#v\n", newYears)
 
 }
