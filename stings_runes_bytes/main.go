@@ -1,3 +1,9 @@
+///////////////////////////////////////
+//        !!Hamza Saidu  !!          //
+//        !!Cyb3rguru    !!          //
+//        !!Strings in Go!!          //
+//////////////////////////////////////
+
 package main
 
 
@@ -11,6 +17,7 @@ printf = f.Printf
 
 func main () {
 
-	
+	// declartion of strings in go
+
 
 }
