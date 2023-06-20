@@ -29,7 +29,7 @@ func main() {
 	} else {
 		fmt.Println("IT's Expensice")
 	}
-	
+
 	// Command line arguments
 
 	fmt.Println("\nCOmmand line args\n")
@@ -56,7 +56,7 @@ func main() {
 
 	fmt.Println(err)
 
-	if (err == nil) {
+	if err == nil {
 		fmt.Printf("type of i %T, and value %d", i, i)
 	} else {
 		fmt.Println("error occurred!!")
@@ -69,7 +69,7 @@ func main() {
 	} else {
 		fmt.Println(err)
 	}
-	
+
 	// For loops
 
 	fmt.Println("\nFor loops: >>>>>>")
@@ -77,11 +77,10 @@ func main() {
 		fmt.Println("current value of i is :", i)
 	}
 
-
 	// While loops
 
 	fmt.Println("\n dealing with while loops")
-	
+
 	j := 10
 
 	for j >= 0 {
@@ -96,28 +95,27 @@ func main() {
 	}
 	fmt.Println("\n sum = ", sum)
 
-	
 	// for and continue statement
 
 	fmt.Println("\n controling for loop with continue statement")
 
-	for i:= 0; i < 10; i++ {
-		if i % 2 != 0 {
+	for i := 0; i < 10; i++ {
+		if i%2 != 0 {
 			fmt.Println("hit an odd number : ", i)
 			continue
 		}
 		fmt.Println(i)
 	}
-	
+
 	// for and break statement
 
 	fmt.Println("\n controling for loop with break statement")
 
 	count := 0
 
-	for i:= 0; true; i++ {
-		if i % 13 == 0 {
-			fmt.Println(i," is divisible by 13")
+	for i := 0; true; i++ {
+		if i%13 == 0 {
+			fmt.Println(i, " is divisible by 13")
 			count++
 		}
 		if count == 10 {
@@ -131,14 +129,14 @@ func main() {
 	fmt.Println("Dealing with label statement in loops\n")
 
 	friends := []string{"Hamza", "demaria", "fuwa", "Yoshino"}
-	names   := [4]string{"Jurino", "Barba", "fuwa", "jamio"}
-// setting labels
+	names := [4]string{"Jurino", "Barba", "fuwa", "jamio"}
+	// setting labels
 
 outer:
 	for index, friend := range friends {
 		for _, name := range names {
 			if friend == name {
-				fmt.Println(name," found in  friends at index", index)
+				fmt.Println(name, " found in  friends at index", index)
 				break outer
 			}
 		}
@@ -149,8 +147,8 @@ outer:
 	// for loop using goto statement
 	x := 0
 loop:
-	
-	if  x <= 10 {
+
+	if x <= 10 {
 		fmt.Println("value of x is ", x)
 		x++
 		goto loop
@@ -165,7 +163,7 @@ loop:
 
 	switch language {
 
-	case "Go" :
+	case "Go":
 		fmt.Println("Welcome to the go program!!")
 
 	case "cmd", "python": // logical or
@@ -182,15 +180,15 @@ loop:
 
 	switch true {
 
-	case nn % 2 == 0:
+	case nn%2 == 0:
 		fmt.Println(nn, "is even with numbers")
 
-	case nn % 2 != 0:
+	case nn%2 != 0:
 		fmt.Println(nn, "is odd with the numbers\n")
 
 	default:
 		fmt.Println("Non of the number options")
-			
+
 	}
 
 	hour := time.Now().Hour()
@@ -205,5 +203,5 @@ loop:
 	}
 
 	fmt.Println("All done with Scopes!!!!!!!")
-	
+
 }

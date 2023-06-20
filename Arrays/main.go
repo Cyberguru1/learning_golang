@@ -1,11 +1,8 @@
 package main
 
-
 import (
 	"fmt"
-
 )
-
 
 func main() {
 	fmt.Println("Dealing with array\n")
@@ -31,7 +28,7 @@ func main() {
 
 	// using classic for loops
 	fmt.Println("\nUsing classical for loops to print content of ar3\n")
-	for i:=0; i<len(ar3); i++ {
+	for i := 0; i < len(ar3); i++ {
 		fmt.Println("index :", i, "value :", ar3[i])
 	}
 
@@ -39,7 +36,7 @@ func main() {
 
 	new_arr := [5]int{}
 	fmt.Printf("\nCurrent array content:%#v\n", new_arr)
-	
+
 	fmt.Println("changing the array content:\n")
 
 	for index, _ := range new_arr {
@@ -59,15 +56,15 @@ func main() {
 	}
 
 	fmt.Printf("\n%#v\n", new_arr2)
-	
+
 	// keyed elements, simillar to dictionary
 
 	key_arr := [...]int{
-		1 : 5,
-		0 : 44,
-		2 : 55,
-		4 : 20,
-		3 : 12, // order doesen't matter, what matters for arrangement is the keys
+		1: 5,
+		0: 44,
+		2: 55,
+		4: 20,
+		3: 12, // order doesen't matter, what matters for arrangement is the keys
 	}
 
 	fmt.Printf("\nKey Elements: %#v\n", key_arr)
@@ -76,5 +73,5 @@ func main() {
 
 	new_unsed[0] = 18
 
-	fmt.Println("\n",new_unsed,"\n")
+	fmt.Println("\n", new_unsed, "\n")
 }

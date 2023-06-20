@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"strconv"
 	"math"
+	"strconv"
 )
 
 func main() {
@@ -17,7 +17,7 @@ func main() {
 
 	//use bleak identifier {_ = name} to allocate unused variable
 
-	xx := 3  // using the short operator works in block scopes ( // used only once )
+	xx := 3 // using the short operator works in block scopes ( // used only once )
 
 	fmt.Println("second name:", name2)
 
@@ -29,7 +29,6 @@ func main() {
 
 	fmt.Println(car, cost, car)
 
-
 	// Act of redeclaration with :=
 
 	var opened = false
@@ -37,21 +36,20 @@ func main() {
 	opened, file := true, "a.txt" // used when a new variable is to be used
 
 	_, _ = opened, file // not used in code again
-	
+
 	// declaring multiple variables
 
 	var (
-		salary float64
+		salary    float64
 		firstname string
-		gender bool
+		gender    bool
 	)
 	// by defalut amoounts to zero
 
 	fmt.Println(salary, firstname, gender)
 
+	// multiple declaration with
 
-	// multiple declaration with 
-	
 	var a, b, c int
 
 	fmt.Println(a, b, c)
@@ -68,8 +66,8 @@ func main() {
 
 	// suming tow varables
 
-	sum := i + j 
-    fmt.Println("summ is ", sum)
+	sum := i + j
+	fmt.Println("summ is ", sum)
 	sum = sum + 5 + 2
 
 	fmt.Println("summ is ", sum)
@@ -78,7 +76,7 @@ func main() {
 
 	fmt.Println("type conversion and assignment\n")
 
-	var t int 
+	var t int
 
 	t = 4
 
@@ -92,20 +90,18 @@ func main() {
 
 	fmt.Println(y)
 
-
-
 	fmt.Println("zero values\n")
 	// zero values: by default all varables are assigned to zero or none or false as in the case of string and bool resp.
 
 	var names string
 
 	var number int
-	
+
 	var coord float64
 
 	var sex bool
 
-	fmt.Printf("Contents are name: %s, number: %d, coord: %f, sex: %s\n",names, number, coord, sex)
+	fmt.Printf("Contents are name: %s, number: %d, coord: %f, sex: %s\n", names, number, coord, sex)
 
 	// comments
 
@@ -117,7 +113,7 @@ func main() {
 
 	/*
 
-	multiple line comments
+		multiple line comments
 
 	*/
 	// fmt package; standard library function
@@ -128,7 +124,7 @@ func main() {
 
 	fmt.Printf(" numbers in current workspace are %d, %s, %d, %f\n", x, name, y, t)
 
-	// usnng escape sequence 
+	// usnng escape sequence
 
 	fmt.Println(" HELLO GO WORLD \" HAMZA \" HERE !!!!\n")
 
@@ -139,10 +135,10 @@ func main() {
 	// %v for all variable types
 
 	// %x hexadecimal
-	// %b binary 
+	// %b binary
 	// %t bool type
 
-	// 
+	//
 
 	fmt.Printf("Helllo %v, %q\n", name, name)
 
@@ -159,15 +155,15 @@ func main() {
 	fmt.Println(pi)
 	const xxx = 5
 	var (
-		p int = xxx
-		q float64 = xxx
-		r byte = xxx
-		bb = xxx > p
+		p  int     = xxx
+		q  float64 = xxx
+		r  byte    = xxx
+		bb         = xxx > p
 	)
 
 	fmt.Printf("type of p is :%T\n type of q is :%T\n type of r is :%T\n", p, q, r)
-	fmt.Printf("type of b is : %T with value %t\n",bb , bb)
-	fmt.Println(p, q, r,"\n") 
+	fmt.Printf("type of b is : %T with value %t\n", bb, bb)
+	fmt.Println(p, q, r, "\n")
 
 	// iota constant
 
@@ -183,7 +179,7 @@ func main() {
 	fmt.Println("manipulating with iota constants:\n")
 	const (
 		CC1 = iota * 2 // default 0
-		CC2    // 2
+		CC2            // 2
 		CC3
 	)
 
@@ -192,22 +188,20 @@ func main() {
 	fmt.Println("\n")
 	const (
 		aC1 = (iota * 2) + 1 // default 1
-		aC2  // 3
+		aC2                  // 3
 		aC3
 	)
 
 	fmt.Println(aC1, aC2, aC3)
 
 	const (
-		m1 = -(iota + 2)  // -2
+		m1 = -(iota + 2) // -2
 		_
-		m2 
+		m2
 		m3
 	)
 
-
 	fmt.Println(m1, m2, m3)
-
 
 	// Go Data types
 
@@ -231,7 +225,7 @@ func main() {
 	//rune TYPE
 
 	var rr rune = 'A'
-	fmt.Printf("%T, %v, %x\n", rr, rr,rr)
+	fmt.Printf("%T, %v, %x\n", rr, rr, rr)
 
 	//BOOL TYPE
 
@@ -241,10 +235,10 @@ func main() {
 	//String TYPE
 
 	var ss string = "HELLO GO!"
-	fmt.Printf("%T\n, %ss\n", ss,ss)
+	fmt.Printf("%T\n, %ss\n", ss, ss)
 
 	// Array and Slice Type
-	
+
 	var numbers = [4]int{1, 2, -3, 400}
 
 	fmt.Printf("%T\n", numbers)
@@ -254,10 +248,10 @@ func main() {
 	var cities = []string{"london", "tokyo", "Germany"}
 	fmt.Printf("%T\n", cities)
 
-	// Map Type :: similar to dictionary 
+	// Map Type :: similar to dictionary
 
 	balances := map[string]float64{
-		"USD" :223.2,
+		"USD": 223.2,
 		"EUR": 533.2,
 	}
 
@@ -265,9 +259,9 @@ func main() {
 
 	// Struct Type
 
-	type Person struct{
+	type Person struct {
 		name string
-		age int
+		age  int
 	}
 
 	var yo Person
@@ -280,23 +274,22 @@ func main() {
 
 	var xd int = 2
 	ptr := &xd
-	fmt.Printf("ptr is of type %T and value %v\n",ptr, ptr)
-	
+	fmt.Printf("ptr is of type %T and value %v\n", ptr, ptr)
+
 	// using pointer for struct
 
 	pointer := &yo
-	fmt.Printf("data type of pointer : %T, name {%v}, age {%v}\n",pointer, (*pointer).name, (*pointer).age)
+	fmt.Printf("data type of pointer : %T, name {%v}, age {%v}\n", pointer, (*pointer).name, (*pointer).age)
 
 	// function type
 
 	fmt.Printf("ff is of type %T\n", ff)
 
-
 	// overflow
 
 	var xin int8 = 127
 
-	fmt.Println(xin + 1, "\n")
+	fmt.Println(xin+1, "\n")
 
 	// type convertion
 
@@ -309,11 +302,11 @@ func main() {
 	// using strconv library
 
 	var f1, _ = strconv.ParseFloat(y1, 64)
-	fmt.Printf("Type of f1 is %T with value %f\n",f1, f1)
+	fmt.Printf("Type of f1 is %T with value %f\n", f1, f1)
 
 	var aa, _ = strconv.Atoi("50")
 	fmt.Printf("type of aa is %T and value of %v\n", aa, aa)
-	
+
 	abb := strconv.Itoa(aa)
 	fmt.Printf("type of bb is %T and value of %v\n", abb, abb)
 
@@ -330,7 +323,7 @@ func main() {
 
 	bt = at
 	fmt.Printf("'bt' is of type %T with value %v and 'at' is of value %v", bt, bt, at)
-	
+
 	fmt.Println("\n\nusing the type variable\n")
 
 	type second = uint // used second as an alias for uint
@@ -344,18 +337,18 @@ func main() {
 		jul
 		Aug
 	)
-	fmt.Println("\n","jun: ",jun, jul, Aug, "\n")
-	
+	fmt.Println("\n", "jun: ", jun, jul, Aug, "\n")
+
 	noIpv6 := math.Pow(2, 128)
 
 	fmt.Printf("type of reuslt %T, value is %b", noIpv6, noIpv6)
-	
+
 	fmt.Println("\n\n")
 	const xfmt float64 = 1.422349587101
 
 	fmt.Printf("xfmt in four decimal places is %.5v", xfmt)
 }
 
-func ff(){
+func ff() {
 
 }
