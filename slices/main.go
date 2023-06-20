@@ -6,27 +6,25 @@ import (
 
 func main() {
 
-
 	var cities []string
-	
+
 	fmt.Println("Slices in python, similar to array without length")
 	fmt.Printf("Cities content is %v\n", cities)
 	fmt.Printf("cities is NUll ?? %v\n", cities == nil)
 
 	// initialinzing slices
-	arr := [4]int{1,2,3,4}
+	arr := [4]int{1, 2, 3, 4}
 	arr2 := make([]int, 4)
 
 	_ = arr2
-	
+
 	fmt.Println(arr)
-	
+
 	// arr = append(arr, 1) this an error only works with slice
 
 	// creating a slice from type literals
 
 	type states []string
-
 
 	america := states{"maryland", "alabama", "virgina"}
 
@@ -35,13 +33,13 @@ func main() {
 	// comparing slices
 
 	fmt.Println("Comparing slices....\n")
-	slice1 := []int{1,1,1,1}
+	slice1 := []int{1, 1, 1, 1}
 
-	slice2 := []int{2,2,2,2}
+	slice2 := []int{2, 2, 2, 2}
 
 	fmt.Printf("slice 1 is %#v, slice 2 is %#v\n", slice1, slice2)
 
-	cmp1 :=  fmt.Sprintf("%v", slice1)
+	cmp1 := fmt.Sprintf("%v", slice1)
 
 	cmp2 := fmt.Sprintf("%v", slice2)
 
@@ -51,14 +49,13 @@ func main() {
 
 	fmt.Printf("result of comparision is : %#v\n", result)
 
+	slice1 = []int{2, 2, 2, 2}
 
-	slice1 = []int{2,2,2,2}
-
-	slice2 = []int{2,2,2,2}
+	slice2 = []int{2, 2, 2, 2}
 
 	fmt.Printf("\nslice 1 is %#v, slice 2 is %#v\n", slice1, slice2)
 
-	cmp1 =  fmt.Sprintf("%v", slice1)
+	cmp1 = fmt.Sprintf("%v", slice1)
 
 	cmp2 = fmt.Sprintf("%v", slice2)
 
@@ -81,8 +78,6 @@ func main() {
 	s3[0] = 30
 
 	fmt.Printf("s1: %#v, s2: %#v, s3: %#v\n", s1, s2, s3)
-
-
 
 	// adding more items to a slice
 
@@ -111,15 +106,11 @@ func main() {
 	dst_slice := make([]int, len(new_slice))
 
 	fmt.Println("Transfering the content of the new_slice")
-	
-	// using the copy function to transfer the content of new_slice, returns len 
+
+	// using the copy function to transfer the content of new_slice, returns len
 
 	res := copy(dst_slice, new_slice)
 
 	fmt.Printf("dst_slice is now : %#v and result of operation is %#v\n", dst_slice, res)
-
-
-
-
 
 }
