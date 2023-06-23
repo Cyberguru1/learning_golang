@@ -114,6 +114,8 @@ func main() {
 
 	fmt.Println(info)
 
-	// Defer statement : used to control 
+	// Defer statement : used to control call of function
+
+	
 	
 }
