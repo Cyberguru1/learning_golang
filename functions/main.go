@@ -166,6 +166,9 @@ func main() {
 	aa()
 	aa()
 	aa()
-	
+
+	// calling the cube function
+
+	fmt.Println("the cube of ")
 	
 }
