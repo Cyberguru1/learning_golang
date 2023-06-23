@@ -94,7 +94,9 @@ func increment(x int) func()  {
 // cube function 
 
 
-func cube(x int)
+func cube(x float64) (result float64) {
+	
+}
 func main() {
 
 	f1() // calling the function 
