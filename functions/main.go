@@ -54,9 +54,16 @@ func sumAnDproduct(arr... int) (sum, prod int) {
 	return
 }
 
+
 func foo() {
 	fmt.Println("This is foo()")
 }
+
+
+func foo() {
+	fmt.Println("This is foo()")
+}
+
 
 func foo() {
 	fmt.Println("This is foo()")
