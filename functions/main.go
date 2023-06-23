@@ -49,6 +49,8 @@ func sumAnDproduct(arr... int) (sum, prod int) {
 		sum += val
 		prod *= val
 	}
+
+	return
 }
 func main() {
 
