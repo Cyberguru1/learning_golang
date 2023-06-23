@@ -101,15 +101,19 @@ func cube(x float64) (result float64) {
 }
 
 func searchItem(item string, arr_str ...string) (result bool) {
-	mappings := []map[string]bool{}
+	mappings := map[string]bool{}
+
+	item = strings.ToLower(item)
 
 	for _, v := range arr_str {
 		mappings[v] = true
 	}
 
-	fmt.Println(mappings)
-
-	result = mappings[item]
+	result, err := mappings[item]
+	
+	if err == false {
+		result = false
+	}
 
 	return
 }
@@ -186,9 +190,18 @@ func main() {
 
 	// searching for and item
 
+	name := map[string]int{"name":4}
+	
+	fmt.Println(name)
 	animals := []string{"lion", "tiger", "bear"}
 	result := searchItem("bear", animals...)
-	_ = result
+	fmt.Println("result of search bear :", result)
+
+	result = searchItem("beaR", animals...)
+	fmt.Println("result of search beaR :", result)
+
+	result = searchItem("pig", animals...)
+	fmt.Println("result of search pig :", result)
 
 
 
