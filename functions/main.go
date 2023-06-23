@@ -135,7 +135,7 @@ func main() {
 
 	barr()
 
-	defer foobar() // las
+	defer foobar() // last
 
 	barr()
 	
