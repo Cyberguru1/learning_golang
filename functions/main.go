@@ -106,6 +106,10 @@ func searchItem(item string, arr_str ...string) (result bool) {
 	for _, v := range arr_str {
 		mappings[v] = true
 	}
+
+	fmt.Println(mappings)
+
+	
 }
 
 func main() {
