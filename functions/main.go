@@ -90,6 +90,11 @@ func increment(x int) func()  {
 }
 
 
+
+// cube function 
+
+
+func cube(x int)
 func main() {
 
 	f1() // calling the function 
