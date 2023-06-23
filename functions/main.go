@@ -9,6 +9,7 @@ package main
 import (
 	"fmt"
 	"strings"
+	"math"
 )
 
 
@@ -95,8 +96,9 @@ func increment(x int) func()  {
 
 
 func cube(x float64) (result float64) {
-	
+	result = math.Pow(x, 3)
 }
+
 func main() {
 
 	f1() // calling the function 
