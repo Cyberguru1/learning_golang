@@ -1,7 +1,7 @@
 ///////////////////////////////////////
 //        !!Hamza Saidu     !!       //
 //        !!Cyb3rguru       !!       //
-//        !!functions in Go !!       //
+//        !!Pointers  in Go !!       //
 //////////////////////////////////////
 
 package main
@@ -38,7 +38,15 @@ func main() {
 	p = &x
 
 	fmt.Printf("p is of type %T, and content %v with value %v\n", p, *p, p)
-	fmt.Printf("address of x is %p\n", x)
+	fmt.Printf("address of x is %p\n", &x)
+
+	// changing the value of x using pointer
+
+	*p = 223
+
+	fmt.Println("value of x is :",x,"and that of *p is :",*p)
+
+
 
 
 
