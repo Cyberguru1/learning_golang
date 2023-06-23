@@ -131,11 +131,11 @@ func main() {
 
 	// Defer statement : used to control call of function
 
-	defer foo()
+	defer foo() // sen
 
 	barr()
 
-	defer foobar() // last
+	defer foobar() // first statement to be called just before exiting main
 
 	barr()
 	
