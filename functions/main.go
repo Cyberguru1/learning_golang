@@ -60,12 +60,12 @@ func foo() {
 }
 
 
-func foo() {
+func foobarr() {
 	fmt.Println("This is foo()")
 }
 
 
-func foo() {
+func barr() {
 	fmt.Println("This is foo()")
 }
 
