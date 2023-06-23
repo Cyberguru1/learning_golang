@@ -148,5 +148,9 @@ func main() {
 
 	defer foobarr() // first statement to be called just before exiting main
 
+	// calling the annonymous function
+
+	aa := increment(12)
+
 	
 }
