@@ -103,7 +103,7 @@ func cube(x float64) (result float64) {
 func searchItem(item string, arr_str ...string) (result bool) {
 	mappings := []map[string]bool{}
 
-	for i
+	for _, v := range arr_str
 }
 
 func main() {
