@@ -100,7 +100,7 @@ func cube(x float64) (result float64) {
 	return
 }
 
-func searchitem(arr_str... string, )
+func searchitem(arr_str... string, item string) (result )
 
 func main() {
 
