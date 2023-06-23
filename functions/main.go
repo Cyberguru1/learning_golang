@@ -46,6 +46,7 @@ func sumAnDproduct(arr... int) (int, int) {
 	prod := 1
 
 	for _, val := range arr {
+		
 		sum += val
 		prod *= val
 	}
