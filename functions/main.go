@@ -110,6 +110,6 @@ func main() {
 
 	// combining varadic function
 	
-	info := 
+	info := parm_varadic(445, "")
 	
 }
