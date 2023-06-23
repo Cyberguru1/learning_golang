@@ -179,6 +179,7 @@ func main() {
 
 	animals := []string{"lion", "tiger", "bear"}
 	result := searchItem("bear", animals...)
+	_ = result
 
 
 
