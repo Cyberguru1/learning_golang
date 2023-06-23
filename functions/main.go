@@ -54,7 +54,9 @@ func sumAnDproduct(arr... int) (sum, prod int) {
 	return
 }
 
-func 
+func foo() {
+	fmt.Println("This")
+}
 
 // function with params and varadic function
 
