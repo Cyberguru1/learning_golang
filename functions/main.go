@@ -169,6 +169,8 @@ func main() {
 
 	// calling the cube function
 
-	fmt.Println("the cube of 5.0 is ", cube(5.0))
+	fmt.Println("the cube of 5.0 is :", cube(5.0))
+
+	
 	
 }
