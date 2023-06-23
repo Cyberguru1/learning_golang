@@ -96,7 +96,7 @@ func main() {
 
 	sum, prod := sumAnDproduct(arr1...)
 
-	fmt.Printf("sum is : %#v and product is : %#v\n", sum, prod)
+	fmt.Printf("sum is : %v and product is : %v\n", sum, prod)
 
 
 
