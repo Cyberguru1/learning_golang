@@ -100,7 +100,7 @@ func cube(x float64) (result float64) {
 	return
 }
 
-func searchitem(arr_str... string, item string) (result bool) {
+func searchItem(arr_str... string, item string) (result bool) {
 	fmt.Println(string)
 }
 
@@ -178,7 +178,7 @@ func main() {
 
 	animals := []string{"lion", "tiger", "bear"}
 	result := searchItem(animals, item="bear")
-	
+
 
 
 	
