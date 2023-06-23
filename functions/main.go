@@ -69,7 +69,7 @@ func main() {
 
 	arr1 := []int{4, 5, 6, 6, 7}
 
-	fmt.Println("\nbefore call : ")
+	fmt.Println("Arr1 before call : ")
 
 	fmt.Printf("%#v\n", arr1)
 
