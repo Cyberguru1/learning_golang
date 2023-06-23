@@ -100,7 +100,7 @@ func cube(x float64) (result float64) {
 	return
 }
 
-func searchItem(item string, arr_str ...string) (bool) {
+func searchItem(item string, arr_str ...string) (result bool) {
 	fmt.Println(item)
 	return
 }
