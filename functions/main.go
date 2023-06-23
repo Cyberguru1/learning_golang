@@ -152,9 +152,9 @@ func main() {
 
 	aa := increment(12)
 
+	aa()
+	aa())
 	fmt.Println(aa())
-	fmt.Println(aa())
-	fmt.Println()
 
 	
 }
