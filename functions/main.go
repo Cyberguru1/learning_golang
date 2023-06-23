@@ -109,7 +109,9 @@ func searchItem(item string, arr_str ...string) (result bool) {
 
 	fmt.Println(mappings)
 
-	
+	result = mappings[item]
+
+	return
 }
 
 func main() {
