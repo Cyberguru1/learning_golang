@@ -52,6 +52,8 @@ func sumAnDproduct(arr... int) (sum, prod int) {
 
 	return
 }
+
+
 func main() {
 
 	f1() // calling the function 
