@@ -94,7 +94,9 @@ func main() {
 
 	// finding some of an array using varadic function
 
-	
+	sum, prod := sumAnDproduct(arr1...)
+
+	fmt.Printf("sum is : %#v and product is ")
 
 
 
