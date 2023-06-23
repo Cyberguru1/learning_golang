@@ -54,6 +54,8 @@ func sumAnDproduct(arr... int) (sum, prod int) {
 	return
 }
 
+func 
+
 // function with params and varadic function
 
 func parm_varadic(size int, names ...string) (answer string) {
@@ -116,6 +118,6 @@ func main() {
 
 	// Defer statement : used to control call of function
 
-	
+
 	
 }
