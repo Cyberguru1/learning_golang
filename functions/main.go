@@ -41,6 +41,7 @@ func varadic1(a... int) {
 	a[0] = 4000 // using varadic function to change value of first index
 }
 
+func sumAnd
 func main() {
 
 	f1() // calling the function 
@@ -79,7 +80,7 @@ func main() {
 
 	fmt.Printf("%#v\n", arr1)
 
-	
+
 
 
 
