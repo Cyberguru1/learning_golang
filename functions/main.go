@@ -61,12 +61,12 @@ func foo() {
 
 
 func foobarr() {
-	fmt.Println("This is foo()")
+	fmt.Println("This is foobarr()")
 }
 
 
 func barr() {
-	fmt.Println("This is foo()")
+	fmt.Println("This is barr()")
 }
 
 // function with params and varadic function
