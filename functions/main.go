@@ -65,13 +65,15 @@ func main() {
 
 	// using list in varadic function
 
-	arr1 := []slice{4, 5, 6, 6, 7}
+	fmt.Println("chainging the content of array using varadic function :")
+
+	arr1 := []int{4, 5, 6, 6, 7}
 
 	fmt.Println("\nbefore call : ")
 
 	fmt.Printf("%#v\n", arr1)
 
-	varadic1(arr1)
+	varadic1(arr1...)
 
 	fmt.Println("After call:: ")
 
