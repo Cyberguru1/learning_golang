@@ -81,6 +81,8 @@ func parm_varadic(size int, names ...string) (answer string) {
 
 
 // anonymous function 
+
+
 func main() {
 
 	f1() // calling the function 
