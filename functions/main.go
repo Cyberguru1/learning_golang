@@ -102,7 +102,6 @@ func cube(x float64) (result float64) {
 
 func searchItem(item string, arr_str ...string) (bool) {
 	fmt.Println(item)
-	_ = result
 	return
 }
 
