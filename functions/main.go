@@ -46,7 +46,7 @@ func sumAnDproduct(arr... int) (int, int) {
 	prod := 1
 
 	for _, val := range arr {
-		fmt.Println(val)
+		
 		sum += val
 		prod *= val
 	}
