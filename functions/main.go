@@ -109,6 +109,7 @@ func main() {
 	fmt.Printf("sum is : %v and product is : %v\n", sum, prod)
 
 	// combining varadic function
-
+	
+	
 	
 }
