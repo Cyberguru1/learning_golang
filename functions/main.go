@@ -41,7 +41,7 @@ func varadic1(a... int) {
 	a[0] = 4000 // using varadic function to change value of first index
 }
 
-func sumAnDproduct(arr... int) (sum, prod int) {
+func sumAnDproduct(arr... int) (sum int, prod int) {
 	sum = 0
 	prod = 1
 
