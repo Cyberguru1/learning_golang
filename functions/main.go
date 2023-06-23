@@ -177,7 +177,7 @@ func main() {
 	// searching for and item
 
 	animals := []string{"lion", "tiger", "bear"}
-	result := searchItem(animals, item="bear")
+	result := searchItem(animals, "bear")
 
 
 
