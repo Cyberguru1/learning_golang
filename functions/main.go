@@ -100,6 +100,7 @@ func cube(x float64) (result float64) {
 	return
 }
 
+f
 
 func main() {
 
@@ -171,6 +172,6 @@ func main() {
 
 	fmt.Println("the cube of 5.0 is :", cube(5.0))
 
-	
+
 	
 }
