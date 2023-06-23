@@ -174,6 +174,11 @@ func main() {
 
 	fmt.Println("the cube of 5.0 is :", cube(5.0))
 
+	// searching for and item
+
+	animals := []string{"lion", "tiger", "bear"}
+	result := searchItem(animals, "bear")
+
 
 	
 }
