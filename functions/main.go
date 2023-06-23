@@ -28,6 +28,18 @@ func f3(a int, b int) (int, int) {
 func sum(a, b, c int) (s int) {
 	s = a + b + c
 	return // naked return statement
+}
+
+func varadic(a... int) {  // declaring a varadic function, args ends with 3 dots (...)
+	fmt.Println("\nPrinting out all the input varables")
+	for _,val  :=  range a {
+		fmt.Println(val)
+	}
+}
+
+func varadic1(a... int) {
+	a[0] = 4000 // using varadic function to change value of first index
+}
 
 func main() {
 
@@ -46,5 +58,27 @@ func main() {
 	// returning without returning a variable in return statement
 
 	fmt.Println("The sum of 1, 2, 4, is :", sum(1, 2, 4))
+
+	// calling the varadic function
+
+	varadic(1,3,4,5,5,6,6)
+
+	// using list in varadic function
+
+	arr1 := []slice{4, 5, 6, 6, 7}
+
+	fmt.Println("\nbefore call : ")
+
+	fmt.Printf("%#v\n", arr1)
+
+	varadic1(arr1)
+
+	fmt.Println("After call:: ")
+
+	fmt.Printf("%#v\n", arr1)
+
+
+
+
 
 }
