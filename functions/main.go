@@ -110,6 +110,8 @@ func main() {
 
 	// combining varadic function
 	
-	info := parm_varadic(445, "Wolf")
+	info := parm_varadic(445, "Wolfgang", "Amadeus", "Mozart")
+
+	fmt.Println(info)
 	
 }
