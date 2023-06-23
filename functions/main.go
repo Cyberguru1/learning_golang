@@ -57,6 +57,7 @@ func sumAnDproduct(arr... int) (sum, prod int) {
 // function with params and varadic function
 
 func parm_varadic(size int, names ...string) (answer string) {
+
 	res  := strings.Join(names, "-*-")
 	answer = fmt.Sprintf("Size : %v, Full Names: %v", size, res) 
 
@@ -107,12 +108,7 @@ func main() {
 
 	fmt.Printf("sum is : %v and product is : %v\n", sum, prod)
 
-
-
-
-
-
-
+	
 
 
 
