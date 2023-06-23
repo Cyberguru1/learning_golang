@@ -132,5 +132,7 @@ func main() {
 	// Defer statement : used to control call of function
 
 	defer foo()
+	barr()
+	
 	
 }
