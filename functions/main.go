@@ -113,5 +113,7 @@ func main() {
 	info := parm_varadic(445, "Wolfgang", "Amadeus", "Mozart")
 
 	fmt.Println(info)
+
+	// Defer statement : used 
 	
 }
