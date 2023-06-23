@@ -79,6 +79,8 @@ func parm_varadic(size int, names ...string) (answer string) {
 	return
 }
 
+
+// anno
 func main() {
 
 	f1() // calling the function 
