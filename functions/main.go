@@ -118,6 +118,7 @@ func searchItem(item string, arr_str ...string) (result bool) {
 	return
 }
 
+
 func main() {
 
 	f1() // calling the function 
@@ -203,7 +204,4 @@ func main() {
 	result = searchItem("pig", animals...)
 	fmt.Println("result of search pig :", result)
 
-
-
-	
 }
