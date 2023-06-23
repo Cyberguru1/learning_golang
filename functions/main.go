@@ -57,7 +57,7 @@ func sumAnDproduct(arr... int) (sum, prod int) {
 // function with params and varadic function
 
 func parm_varadic(size int, names... string) (answer string) {
-	
+	names = strings.join(names, "")
 }
 
 func main() {
