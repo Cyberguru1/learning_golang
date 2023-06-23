@@ -42,8 +42,8 @@ func varadic1(a... int) {
 }
 
 func sumAnDproduct(arr... int) (sum, prod int) {
-	sum := 0
-	prod := 1
+	sum = 0
+	prod = 1
 
 	for _, val := range arr {
 		sum += val
