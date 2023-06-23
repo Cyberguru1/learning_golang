@@ -135,6 +135,6 @@ func main() {
 
 	barr()
 
-	defer foobar() // first statement to be called just before exiting main
+	defer foobarr() // first statement to be called just before exiting main
 	
 }
