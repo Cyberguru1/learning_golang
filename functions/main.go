@@ -133,6 +133,7 @@ func main() {
 
 	defer foo()
 	barr()
-	
+
+	defer foobar() called 
 	
 }
