@@ -92,7 +92,9 @@ func main() {
 
 	fmt.Printf("%#v\n", arr1)
 
-	// fui
+	// finding some of an array using varadic function
+
+	
 
 
 
