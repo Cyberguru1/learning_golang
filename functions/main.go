@@ -97,7 +97,9 @@ func increment(x int) func()  {
 
 func cube(x float64) (result float64) {
 	result = math.Pow(x, 3)
+	return
 }
+
 
 func main() {
 
@@ -164,5 +166,6 @@ func main() {
 	aa()
 	aa()
 	aa()
+	
 	
 }
