@@ -83,7 +83,7 @@ func parm_varadic(size int, names ...string) (answer string) {
 // anonymous function 
 
 func increment(x int) func()  {
-	return func() int {
+	return func() {
 		x++
 		fmt.Println(x)
 	}
