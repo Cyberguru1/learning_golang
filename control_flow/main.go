@@ -4,7 +4,6 @@
 //        !!Control flow in Go!!     //
 //////////////////////////////////////
 
-
 package main
 
 import (

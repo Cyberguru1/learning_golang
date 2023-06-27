@@ -8,10 +8,9 @@ package main
 
 import (
 	"fmt"
-	"strings"
 	"math"
+	"strings"
 )
-
 
 // defining function
 
@@ -24,7 +23,7 @@ func f2(a, b, c, d int, e string) {
 }
 
 func f3(a int, b int) (int, int) {
-	return a+b, b * a
+	return a + b, b * a
 }
 
 func sum(a, b, c int) (s int) {
@@ -32,18 +31,18 @@ func sum(a, b, c int) (s int) {
 	return // naked return statement
 }
 
-func varadic(a... int) {  // declaring a varadic function, args ends with 3 dots (...)
+func varadic(a ...int) { // declaring a varadic function, args ends with 3 dots (...)
 	fmt.Println("\nPrinting out all the input varables")
-	for _,val  :=  range a {
+	for _, val := range a {
 		fmt.Println(val)
 	}
 }
 
-func varadic1(a... int) {
+func varadic1(a ...int) {
 	a[0] = 4000 // using varadic function to change value of first index
 }
 
-func sumAnDproduct(arr... int) (sum, prod int) {
+func sumAnDproduct(arr ...int) (sum, prod int) {
 	sum = 0
 	prod = 1
 
@@ -55,16 +54,13 @@ func sumAnDproduct(arr... int) (sum, prod int) {
 	return
 }
 
-
 func foo() {
 	fmt.Println("This is foo()")
 }
 
-
 func foobarr() {
 	fmt.Println("This is foobarr()")
 }
-
 
 func barr() {
 	fmt.Println("This is barr()")
@@ -74,26 +70,22 @@ func barr() {
 
 func parm_varadic(size int, names ...string) (answer string) {
 
-	res  := strings.Join(names, "-*-")
-	answer = fmt.Sprintf("Size : %v, Full Names: %v", size, res) 
+	res := strings.Join(names, "-*-")
+	answer = fmt.Sprintf("Size : %v, Full Names: %v", size, res)
 
 	return
 }
 
+// anonymous function
 
-// anonymous function 
-
-func increment(x int) func()  {
+func increment(x int) func() {
 	return func() {
 		x++
 		fmt.Println(x)
 	}
 }
 
-
-
-// cube function 
-
+// cube function
 
 func cube(x float64) (result float64) {
 	result = math.Pow(x, 3)
@@ -110,7 +102,7 @@ func searchItem(item string, arr_str ...string) (result bool) {
 	}
 
 	result, err := mappings[item]
-	
+
 	if err == false {
 		result = false
 	}
@@ -118,11 +110,10 @@ func searchItem(item string, arr_str ...string) (result bool) {
 	return
 }
 
-
 func main() {
 
-	f1() // calling the function 
-	
+	f1() // calling the function
+
 	// calling f2 and passing params
 
 	f2(1, 2, 4, 5, "my name")
@@ -131,7 +122,7 @@ func main() {
 
 	a, b := f3(4, 5)
 
-	fmt.Println("called f3 with a and b",a, b )
+	fmt.Println("called f3 with a and b", a, b)
 
 	// returning without returning a variable in return statement
 
@@ -139,7 +130,7 @@ func main() {
 
 	// calling the varadic function
 
-	varadic(1,3,4,5,5,6,6)
+	varadic(1, 3, 4, 5, 5, 6, 6)
 
 	// using list in varadic function
 
@@ -164,7 +155,7 @@ func main() {
 	fmt.Printf("sum is : %v and product is : %v\n", sum, prod)
 
 	// combining varadic function
-	
+
 	info := parm_varadic(445, "Wolfgang", "Amadeus", "Mozart")
 
 	fmt.Println(info)
@@ -191,8 +182,8 @@ func main() {
 
 	// searching for and item
 
-	name := map[string]int{"name":4}
-	
+	name := map[string]int{"name": 4}
+
 	fmt.Println(name)
 	animals := []string{"lion", "tiger", "bear"}
 	result := searchItem("bear", animals...)

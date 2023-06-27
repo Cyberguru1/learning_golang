@@ -4,7 +4,6 @@
 //        !!Maps in Go   !!          //
 //////////////////////////////////////
 
-
 package main
 
 import (
@@ -12,14 +11,12 @@ import (
 	s "strings"
 )
 
-
 func main() {
 	p := f.Println
 	pf := f.Printf
 	rep := s.Repeat
 
-	_, _, _ = p, pf,rep
-
+	_, _, _ = p, pf, rep
 
 	// declaring maps in golang
 
@@ -48,8 +45,8 @@ func main() {
 	//declaring and initializing a map
 
 	balances := map[string]float64{
-		"bsd":555.6,
-		"USD":343.22,
+		"bsd": 555.6,
+		"USD": 343.22,
 	}
 
 	p(balances)
@@ -57,28 +54,27 @@ func main() {
 	// check if a value exists in an array
 
 	val, res := balances["bsdd"]
-	
+
 	pf("value: in balance with key bsdd: %v, and result of operation: %v\n", val, res)
 
 	val, res = balances["bsd"]
 
 	pf("value: in balance with key bsd: %v, and result of operation: %v\n", val, res)
 
-	// looping through a map 
+	// looping through a map
 
 	for key, value := range balances {
 		pf(" KEY : %q Value : %f\n", key, value)
 	}
-	
+
 	// cloning a map in go
 
 	friends := map[string]string{
-		"first":rep("@", 1),
-		"second":rep("@", 2),
-		"third":rep("@", 3),
-		"fourth":rep("@", 4),
-		"fifth":rep("@", 5),
-
+		"first":  rep("@", 1),
+		"second": rep("@", 2),
+		"third":  rep("@", 3),
+		"fourth": rep("@", 4),
+		"fifth":  rep("@", 5),
 	}
 
 	p(friends)
@@ -90,7 +86,5 @@ func main() {
 	}
 
 	pf("%#v\n", new_friends)
-
-
 
 }

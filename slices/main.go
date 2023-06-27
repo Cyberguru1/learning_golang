@@ -4,7 +4,6 @@
 //        !!Slices in Go !!          //
 //////////////////////////////////////
 
-
 package main
 
 import (
@@ -126,7 +125,7 @@ func main() {
 	_ = years
 
 	newYears := append([]int{}, years[0:3]...)
-	newYears  = append(newYears, years[8:11]...)
+	newYears = append(newYears, years[8:11]...)
 
 	fmt.Printf("\nNew array of newYears is %#v\n", newYears)
 

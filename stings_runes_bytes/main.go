@@ -6,27 +6,23 @@
 
 package main
 
-
 import (
 	f "fmt"
 	"strings"
 )
 
-
-
-
-func main () {
+func main() {
 
 	print := f.Println
 	printf := f.Printf
-	_ , _= printf, print
+	_, _ = printf, print
 
 	// declartion of strings in go
 
 	var s1 string = "hello go world"
 
 	s2 := "Hello golang!!"
-	printf(" S2 is : %s and S3 is :%q\n",s2, s1)
+	printf(" S2 is : %s and S3 is :%q\n", s2, s1)
 
 	// concatenation in golang
 	s3 := "I love " + "Golang" + "!!"
@@ -50,7 +46,7 @@ func main () {
 		print(string(i))
 	}
 
-	for i:=0; i < len(s3); i++ {
+	for i := 0; i < len(s3); i++ {
 		printf("%v", string(s3[i]))
 	}
 
@@ -67,7 +63,7 @@ func main () {
 
 	// using some of the strings module
 
-	print("using the count function to count name: ",strings.Count(name, ""))
+	print("using the count function to count name: ", strings.Count(name, ""))
 
 	// removing character using trim
 

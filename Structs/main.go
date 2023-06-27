@@ -6,12 +6,10 @@
 
 package main
 
-
 import (
 	"fmt"
 	"strings"
 )
-
 
 func main() {
 	p := fmt.Println
@@ -22,20 +20,20 @@ func main() {
 
 	type contact struct {
 		name, email, address string
-		id float64
+		id                   float64
 	}
 
-	pf("%#v\n", strings.Repeat("%",4))
+	pf("%#v\n", strings.Repeat("%", 4))
 
 	details := contact{
-		"hamza", 
-		"hamza@cyb3rguru.com", 
+		"hamza",
+		"hamza@cyb3rguru.com",
 		"127.0.0.1",
 		99.9,
 	}
 
 	p(details)
-	
+
 	//accessing items
 
 	pf("name : %#v\n", details.name)
@@ -51,13 +49,12 @@ func main() {
 	Employee := struct {
 		name, shape, size, height string
 	}{
-		name: "ujiro",
-		shape:	"##cm",
-		size: "###",
+		name:   "ujiro",
+		shape:  "##cm",
+		size:   "###",
 		height: "##",
-		}
+	}
 
-	pf("%#v\n",Employee)
-
+	pf("%#v\n", Employee)
 
 }

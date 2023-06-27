@@ -44,10 +44,6 @@ func main() {
 
 	*p = 223
 
-	fmt.Println("value of x is :",x,"and that of *p is :",*p)
-
-
-
-
+	fmt.Println("value of x is :", x, "and that of *p is :", *p)
 
 }
