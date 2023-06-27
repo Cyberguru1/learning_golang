@@ -50,24 +50,36 @@ type shape interface {
 	perimeter() float64
 }
 
+
 // creating the struct data type
 type circle struct {
-	raduis float64
+	radius float64
 }
+
 
 type rectangle struct {
 	width, height float64
 }
 
+
 // function methods of the classes
 
-func area(r float64) float64 {
-	return math.PI * r * 2
+func (c circle) area() float64 {
+	return math.Pi * math.Pow(c.radius, 2)
 }
 
-func perimeter(r float64) float64 {
-	return 2 * (r.wdith + r.height)
+func (c circle) perimeter() float64{
+	return 2 * math.Pi * c.radius
 }
+
+func (r rectangle) perimeter() float64 {
+	return 2 * (r.width + r.height)
+}
+
+func (r rectangle) area() float64 {
+	return  r.height * r.width
+}
+
 
 // the print function
 func print(s shape){
@@ -127,13 +139,35 @@ func main() {
 
 	fmt.Println("Implementing interfaces in go\n")
 
-	c1 := circle(raduis: 5.)
-	r1 := rectangle(width:3., height: 2.1)
+	c1 := circle{radius: 5.}
+	r1 := rectangle{width:3., height: 2.1}
 
+	v := c1
+
+	fmt.Println(v.perimeter())
+
+	fmt.Println("features of c1 :")
 	print(c1)
 
+	fmt.Println("\nfeatures of r1 :")
 	print(r1)
+
+	// empty type
+
+	fmt.Println("\nEmpty data type using empty interfaces")
+	var x interface{}
+
+	x = 5
+
+	fmt.Printf("x is %T and of type %#v\n", x, x)
+
+	x = "my name is golang dev"
 	
+	fmt.Printf("x is %T and of type %#v\n", x, x)
+
+	x = 43.2325
+
+	fmt.Printf("x is %T and of type %#v\n", x, x)
 
 }
  
