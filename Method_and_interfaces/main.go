@@ -87,6 +87,9 @@ func main() {
 	yourCar.changeCar2("Hundait", 214400)
 	fmt.Println("changing myCar features", *yourCar)
 
+	//interfaces in go
+	
 
 
 }
+ 
