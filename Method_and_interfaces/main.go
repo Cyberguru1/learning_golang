@@ -9,6 +9,7 @@ package main
 import (
 	"time"
 	"fmt"
+	"math"
 )
 
 type names []string 
@@ -38,6 +39,41 @@ func (c car) changeCar(newBrand string, newPrince int){
 func (c *car) changeCar2(newBrand string, newPrince int){
 	c.price = newPrince
 	c.brand = newBrand
+}
+
+// interfaces in go simillar to class
+
+
+// interface that links the functions
+type shape interface {
+	area() float64
+	perimeter() float64
+}
+
+// creating the struct data type
+type circle struct {
+	raduis float64
+}
+
+type rectangle struct {
+	width, height float64
+}
+
+// function methods of the classes
+
+func area(r float64) float64 {
+	return math.PI * r * 2
+}
+
+func perimeter(r float64) float64 {
+	return 2 * (r.wdith + r.height)
+}
+
+// the print function
+func print(s shape){
+	fmt.Printf("\nShape: %#v\n", s)
+	fmt.Printf("\nArea: %v\n", s.area())
+	fmt.Printf("Perimeter: %v\n", s.perimeter()  )
 }
 
 func main() {
@@ -88,8 +124,16 @@ func main() {
 	fmt.Println("changing myCar features", *yourCar)
 
 	//interfaces in go
-	
 
+	fmt.Println("Implementing interfaces in go\n")
+
+	c1 := circle(raduis: 5.)
+	r1 := rectangle(width:3., height: 2.1)
+
+	print(c1)
+
+	print(r1)
+	
 
 }
  
